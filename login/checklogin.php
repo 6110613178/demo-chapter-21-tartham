@@ -10,7 +10,7 @@ session_start();
                   AND username='$username' ";
                   $result = mysqli_query($con,$sql);
 
-                  if(mysqli_num_rows($result)==1){
+                  if(!empty(mysqli_num_rows($result))){
                       $arrayUser = array();
                       while($row = mysqli_fetch_array($result)){
                         array_push($arrayUser,$row);
